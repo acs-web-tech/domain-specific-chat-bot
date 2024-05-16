@@ -16,14 +16,17 @@ export default function Home(){
         ]}></NavigationBar>
         </div>
         {/* Navigation Bar End */}
+
+        {/* Main Content Description  */}
         <div className="mt-32">
             <MainContent></MainContent>
             <Des></Des>
         </div>
-        
-        {/* Main Content Description  */}
-       
+        <div>
+            
+        </div>
        {/*  Main Content Description End */}
+
         </>
     ) 
 }
