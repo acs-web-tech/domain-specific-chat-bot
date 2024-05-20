@@ -8,6 +8,7 @@ import "../index.css"
 import MainContentSecond from "./MainContentSecond"
 import Skills from "./Skills"
 import Projects from "./Projects"
+import ProjectCard from "./ProjectCard"
 export default function Home(){
     return(
         <>
@@ -57,7 +58,9 @@ export default function Home(){
        {/* Projects */}
        <div className="flex flex-col justify-center items-center pt-20">
        <Projects></Projects>
+       <ProjectCard></ProjectCard>
        </div>
+       {/* Projects End */}
         </>
     ) 
 }
