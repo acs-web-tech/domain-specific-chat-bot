@@ -8,7 +8,12 @@ import "../index.css"
 import MainContentSecond from "./MainContentSecond"
 import Skills from "./Skills"
 import Projects from "./Projects"
-import ProjectCard from "./ProjectCard"
+import ProjectCard,{SingleCard} from "./ProjectCard"
+import fruitImage from "../static/fruits.svg"
+import  Connect  from "./Connect"
+import buttonIcon from "../static/linkedin-logo.svg"
+import Footer from "./Footer"
+
 export default function Home(){
     return(
         <>
@@ -59,8 +64,25 @@ export default function Home(){
        <div className="flex flex-col justify-center items-center pt-20">
        <Projects></Projects>
        <ProjectCard></ProjectCard>
+       <div className="flex gap-10 pb-32">
+       <SingleCard fruit={fruitImage}></SingleCard>
+       <SingleCard fruit={fruitImage}></SingleCard>
+       <SingleCard fruit={fruitImage}></SingleCard>
        </div>
-       {/* Projects End */}
+         {/* Projects End */}
+
+       {/* Connect LinkedIn  */}
+       <div className="w-full h-[31.875rem]">
+        <Connect buttonIcon={buttonIcon}></Connect>
+       </div>
+       </div>
+       {/* Connect LinkedIn End */}
+
+       {/* Footer start */}
+       <div>
+        <Footer></Footer>
+       </div>
+     
         </>
     ) 
 }

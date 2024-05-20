@@ -20,6 +20,9 @@ body {
   border-radius: 2.73175rem;
   background: url("./static/hero-2.svg") lightgray -176.13px 0px / 206.897% 100% no-repeat;
 }
+.fruits{
+  background: url("./static//fruits.svg");
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
