@@ -18,7 +18,7 @@ export default function Home(){
     return(
         <>
         {/* Navigation Bar */}
-        <div className="flex justify-around px-36 mt-16 poppins-bold">
+        <div className="flex justify-around px-36 mt-10 md:mt-16 poppins-bold">
         <NavigationBar List={[{navtext:"Home",navlink:"/",navStyle:""},
              {navtext:"About",navlink:"/",navStyle:""},
              {navtext:"Skills",navlink:"/",navStyle:""},
@@ -30,26 +30,27 @@ export default function Home(){
         {/* Navigation Bar End */}
 
         {/* Main Content Description  */}
-        <div className="flex justify-around items-center mt-36 pl-24">
-        <div className="mt-32 poppins-light flex items-center flex-col">
-            <div className="pb-10">
+        <div className="mt-12 flex flex-col justify-center items-center md:flex md:flex-row md:justify-around items-center md:mt-36 md:pl-24">
+        <div className="md:mt-32 poppins-light justify-center flex items-center flex-col">
+            <div className="md:pb-10 md:flex-none flex flex-col md:justify-start justify-center items-center md:items-start">
             <MainContent></MainContent>
             <Des></Des>
             </div>
         </div>
-        <div className="poppins-bold ml-5">
+        <div className="poppins-bold md:ml-5 mt-2 md:mt-0 h-92 w-96 md:w-auto md:h-auto">
            <AsideImage style={{width:"34.125rem",height:"30.75519rem", rounded:"2.46338rem"}}></AsideImage>
         </div>
         </div>
        {/*  Main Content Description End */}
 
        {/* Main Content Part-2 */}
-       <div className="flex justify-around mt-56 pl-24 pb-24">
+       <div className="md:flex flex justify-center items-center md:flex-row flex-col-reverse md:items-start md:justify-around md:mt-56 pl-22 md:pb-24">
        
-        <div className="poppins-bold ml-5">
+        <div className="poppins-bold md:ml-5 h-92 w-96 md:w-auto md:h-auto">
            <AsideImage image={hero2} style={{width:"29.125rem",height:"40.75519rem", rounded:"2.46338rem",backgroundImage:"custom-bg-image"}}></AsideImage>
         </div>
-        <div>
+        <div className="w-3/4 md:w-auto md:pb-10 md:flex-none flex flex-col md:justify-start justify-center items-center md:items-start">
+       
             <MainContentSecond></MainContentSecond>
         </div>
         </div>
@@ -61,21 +62,23 @@ export default function Home(){
        {/* Skills End */}
 
        {/* Projects */}
-       <div className="flex flex-col justify-center items-center pt-20">
+       <div className="md:flex md:flex-col md:justify-center md:items-center pt-20 pb-5">
        <Projects></Projects>
        <ProjectCard></ProjectCard>
-       <div className="flex gap-10 pb-32">
+       <div className="flex flex-col md:flex-row md:justify-start justify-center items-center md:gap-10 md:pb-32 px-5 md:px-0">
        <SingleCard fruit={fruitImage}></SingleCard>
        <SingleCard fruit={fruitImage}></SingleCard>
        <SingleCard fruit={fruitImage}></SingleCard>
+       </div>
        </div>
          {/* Projects End */}
 
        {/* Connect LinkedIn  */}
-       <div className="w-full h-[31.875rem]">
+       <div className="w-full md:h-[31.875rem]">
         <Connect buttonIcon={buttonIcon}></Connect>
        </div>
-       </div>
+       
+       
        {/* Connect LinkedIn End */}
 
        {/* Footer start */}
