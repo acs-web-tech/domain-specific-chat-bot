@@ -18,7 +18,7 @@ export default function Home(){
     return(
         <>
         {/* Navigation Bar */}
-        <div className="flex justify-around px-36 mt-10 md:mt-16 poppins-bold">
+        <div className="flex justify-around md:px-36  mt-10 md:mt-16 poppins-bold">
         <NavigationBar List={[{navtext:"Home",navlink:"/",navStyle:""},
              {navtext:"About",navlink:"/",navStyle:""},
              {navtext:"Skills",navlink:"/",navStyle:""},
@@ -32,24 +32,24 @@ export default function Home(){
         {/* Main Content Description  */}
         <div className="mt-12 flex flex-col justify-center items-center md:flex md:flex-row md:justify-around items-center md:mt-36 md:pl-24">
         <div className="md:mt-32 poppins-light justify-center flex items-center flex-col">
-            <div className="md:pb-10 md:flex-none flex flex-col md:justify-start justify-center items-center md:items-start">
+            <div className="md:pb-10 md:flex-none flex flex-col md:justify-start justify-center items-center md:items-start pl-5 text-justify md:pl-0">
             <MainContent></MainContent>
             <Des></Des>
             </div>
         </div>
-        <div className="poppins-bold md:ml-5 mt-2 md:mt-0 h-92 w-96 md:w-auto md:h-auto">
+        <div className="poppins-bold md:ml-5 mt-2 md:mt-0 h-92 w-full md:w-auto md:h-auto md:px-0 px-5" >
            <AsideImage style={{width:"34.125rem",height:"30.75519rem", rounded:"2.46338rem"}}></AsideImage>
         </div>
         </div>
        {/*  Main Content Description End */}
 
        {/* Main Content Part-2 */}
-       <div className="md:flex flex justify-center items-center md:flex-row flex-col-reverse md:items-start md:justify-around md:mt-56 pl-22 md:pb-24">
+       <div className="md:flex flex justify-center items-center md:flex-row flex-col-reverse md:items-start md:justify-around md:mt-56 pl-22 md:pb-24 pb-5">
        
-        <div className="poppins-bold md:ml-5 h-92 w-96 md:w-auto md:h-auto">
-           <AsideImage image={hero2} style={{width:"29.125rem",height:"40.75519rem", rounded:"2.46338rem",backgroundImage:"custom-bg-image"}}></AsideImage>
+        <div className="poppins-bold md:ml-5 h-92 w-full md:w-auto md:h-auto px-10 md:px-0">
+           <AsideImage image={hero2} style={{width:"34.125rem",height:"30.75519rem", rounded:"2.46338rem",backgroundImage:"custom-bg-image"}}></AsideImage>
         </div>
-        <div className="w-3/4 md:w-auto md:pb-10 md:flex-none flex flex-col md:justify-start justify-center items-center md:items-start">
+        <div className="w-full md:w-3/4 md:w-auto md:pb-10 md:flex-none flex flex-col md:justify-start justify-center items-center md:items-start">
        
             <MainContentSecond></MainContentSecond>
         </div>
