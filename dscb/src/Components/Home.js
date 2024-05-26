@@ -31,25 +31,25 @@ export default function Home(){
 
         {/* Main Content Description  */}
         <div className="mt-12 flex flex-col justify-center items-center md:flex md:flex-row md:justify-around items-center md:mt-36 md:pl-24">
-        <div className="md:mt-32 poppins-light justify-center flex items-center flex-col">
+        <div className="md:mt-18 poppins-light justify-center flex items-center flex-col">
             <div className="md:pb-10 md:flex-none flex flex-col md:justify-start justify-center items-center md:items-start pl-5 text-justify md:pl-0">
             <MainContent></MainContent>
             <Des></Des>
             </div>
         </div>
-        <div className="poppins-bold md:ml-5 mt-2 md:mt-0 h-92 w-full md:w-auto md:h-auto md:px-0 px-5" >
+        <div className="poppins-bold md:ml-5 mt-10 md:mt-0 h-92 w-full md:w-auto md:h-auto md:px-0 px-5" >
            <AsideImage style={{width:"34.125rem",height:"30.75519rem", rounded:"2.46338rem"}}></AsideImage>
         </div>
         </div>
        {/*  Main Content Description End */}
 
        {/* Main Content Part-2 */}
-       <div className="md:flex flex justify-center items-center md:flex-row flex-col-reverse md:items-start md:justify-around md:mt-56 pl-22 md:pb-24 pb-5">
+       <div className="md:flex mt-10 md:mt-0 flex justify-center items-center md:flex-row flex-col-reverse md:items-start md:gap-20 md:mt-56 pl-22 pb-5 md:pb-24">
        
-        <div className="poppins-bold md:ml-5 h-92 w-full md:w-auto md:h-auto px-10 md:px-0">
+        <div className="poppins-bold  mt-5 md:mt-0 md:ml-5 h-92 w-full md:w-auto md:h-auto px-5 md:px-0">
            <AsideImage image={hero2} style={{width:"34.125rem",height:"30.75519rem", rounded:"2.46338rem",backgroundImage:"custom-bg-image"}}></AsideImage>
         </div>
-        <div className="w-full md:w-3/4 md:w-auto md:pb-10 md:flex-none flex flex-col md:justify-start justify-center items-center md:items-start">
+        <div className="w-full md:w-3/4 md:w-auto md:pt-10 md:flex flex flex-col md:justify-center justify-center items-center md:items-center">
        
             <MainContentSecond></MainContentSecond>
         </div>

@@ -6,7 +6,7 @@ export default function Connect(props){
             <p className="md:mt-3 md:w-[44.25rem] text-[1.125rem] md:text-[1.3125] md:font-[400] tracking-[0.03938rem] text-center">
             Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam venenatis fghh hgjj nisi ante.
             </p>
-            <button className="mt-5 flex items-center justify-center bg-white w-[20.3125rem] md:w-[20.3125rem] md:h-[4.5625rem] md:font-[600] heading-[1.5rem] text-[#0066C8] text-[1.8rem] md:text-[1.6875rem] rounded-lg md:mt-3">Let's Connect <img src={props.buttonIcon}/></button>
+            <button className="mt-5 flex items-center justify-center bg-white w-[20.3125rem] md:w-[20.3125rem] md:h-[4.5625rem] md:font-[600] heading-[1.5rem] text-[#0066C8] text-[1.8rem] md:text-[1.6875rem] rounded-lg md:mt-3">Let's Connect <img  src={props.buttonIcon}/></button>
         </div>
     )
 }
