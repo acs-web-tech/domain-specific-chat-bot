@@ -13,6 +13,7 @@ import fruitImage from "../static/fruits.svg"
 import  Connect  from "./Connect"
 import buttonIcon from "../static/linkedin-logo.svg"
 import Footer from "./Footer"
+import layer from "../static/facets.svg"
 
 export default function Home(){
     return(
@@ -30,7 +31,7 @@ export default function Home(){
         {/* Navigation Bar End */}
 
         {/* Main Content Description  */}
-        <div className="mt-12 flex flex-col justify-center items-center md:flex md:flex-row md:justify-around items-center md:mt-36 md:pl-24">
+        <div className="relative main-custom-bg mt-12 flex flex-col justify-center items-center md:flex md:flex-row md:justify-around items-center md:mt-36 md:pl-27">
         <div className="md:mt-18 poppins-light justify-center flex items-center flex-col">
             <div className="md:pb-10 md:flex-none flex flex-col md:justify-start justify-center items-center md:items-start pl-5 text-justify md:pl-0">
             <MainContent></MainContent>
