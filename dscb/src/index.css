@@ -52,6 +52,12 @@ code {
   box-shadow: inset 0 0 35px #54a7ff, 0 0 30px rgba(0, 0, 0, 0.2);
   background: url("./static/noise-05.png");
 }
+.cover-head-bg{
+  background: url("./static/world-bg.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
 
 @keyframes grad {
   10%{border-image: linear-gradient(90deg, rgb(246, 241, 231) 0%, rgb(242, 172, 132) 20%, rgb(63, 89, 228) 74%, rgb(64, 22, 160) 100%) 30;

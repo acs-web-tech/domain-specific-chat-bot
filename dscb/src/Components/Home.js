@@ -14,12 +14,14 @@ import  Connect  from "./Connect"
 import buttonIcon from "../static/linkedin-logo.svg"
 import Footer from "./Footer"
 import layer from "../static/facets.svg"
+import { Link } from "react-router-dom"
 
 export default function Home(){
     return(
         <>
         {/* Navigation Bar */}
-        <div className="flex justify-around md:px-36  mt-10 md:mt-16 poppins-bold">
+        <div className="cover-head-bg h-[500px] md:h-[800px]">
+        <div className="flex justify-around md:px-36 bg-white poppins-bold p-3 sticky top-0 z-10">
         <NavigationBar List={[{navtext:"Home",navlink:"/",navStyle:""},
              {navtext:"About",navlink:"/",navStyle:""},
              {navtext:"Skills",navlink:"/",navStyle:""},
@@ -31,15 +33,14 @@ export default function Home(){
         {/* Navigation Bar End */}
 
         {/* Main Content Description  */}
-        <div className="relative main-custom-bg mt-12 flex flex-col justify-center items-center md:flex md:flex-row md:justify-around items-center md:mt-36 md:pl-27">
-        <div className="md:mt-18 poppins-light justify-center flex items-center flex-col">
+        <div className="relative main-custom-bg mt-12 flex flex-col justify-center items-center md:flex md:flex-row md:justify-around items-center  md:px-0 md:mt-36 md:pl-27">
+        <div className="md:mt-18 poppins-light justify-center flex items-center flex-col pr-3">
             <div className="md:pb-10 md:flex-none flex flex-col md:justify-start justify-center items-center md:items-start pl-5 text-justify md:pl-0">
             <MainContent></MainContent>
             <Des></Des>
+            <button className="skill-bg w-full h-12 mt-5"><Link to="/">contact Sales</Link></button>
             </div>
         </div>
-        <div className="poppins-bold md:ml-5 mt-10 md:mt-0 h-92 w-full md:w-auto md:h-auto md:px-0 px-5" >
-           <AsideImage style={{width:"34.125rem",height:"30.75519rem", rounded:"2.46338rem"}}></AsideImage>
         </div>
         </div>
        {/*  Main Content Description End */}

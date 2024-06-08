@@ -14,7 +14,7 @@ export default function NavigationBar({List}){
        {
         List.map((value)=>{
           return(
-                <Link to={value.navlink}><div className="middle-element md:text-white ">{value.navtext}</div></Link>
+                <Link to={value.navlink}><div className="middle-element md:text-black ">{value.navtext}</div></Link>
         )
        })
     }
