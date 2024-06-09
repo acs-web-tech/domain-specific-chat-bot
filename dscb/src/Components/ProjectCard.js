@@ -15,7 +15,7 @@ export function SingleCard(props){
     return(
         <div className="border-style-custom [font-family:'Poppins'] w-full md:w-[28rem] mt-12 px-[20px] py-[10px] mt:px-[0px]  mt:py-[0px] shadow-md	 shadow-slate-100	">
           <div className="w-full h-[17.5rem] md:w-[25.4035rem] md:h-[17.5rem] fruits rounded-xl"></div>
-          <h4 className="md:text-[1.92188rem] md:font-[700] tracking-[0.05769rem] mt-5">{props.type} ${props.price} </h4>
+          <h4 className="md:text-[1.92188rem] text-[2rem] md:font-[700] tracking-[0.05769rem] mt-5">{props.type} ${props.price} </h4>
           <p className="w-full md:text-[0.879rem] md:font-[400] text-[#858585] tracking-[0.02669rem] md:mt-3">
           {props.children}
           </p>
