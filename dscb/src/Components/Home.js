@@ -21,7 +21,7 @@ export default function Home(){
         <>
         {/* Navigation Bar */}
         <div className="cover-head-bg h-[500px] md:h-[800px]">
-        <div className="custom-bg-hero flex justify-around md:px-36 poppins-bold p-3 sticky top-0 z-10">
+        <div className="w-full custom-bg-hero flex justify-around md:px-36 poppins-bold p-3 fixed top-0 z-10">
         <NavigationBar List={[{navtext:"Home",navlink:"/",navStyle:""},
              {navtext:"About",navlink:"/",navStyle:""},
              {navtext:"Skills",navlink:"/",navStyle:""},
@@ -33,8 +33,8 @@ export default function Home(){
         {/* Navigation Bar End */}
 
         {/* Main Content Description  */}
-        <div className="relative main-custom-bg mt-12 flex flex-col justify-center items-center md:flex md:flex-row md:justify-around items-center  md:px-0 md:mt-36 md:pl-27">
-        <div className="md:mt-18 poppins-light justify-center flex items-center flex-col pr-3">
+        <div className="relative main-custom-bg  flex flex-col justify-center items-center md:flex md:flex-row md:justify-around items-center  md:px-0 md:mt-0 md:pl-27">
+        <div className="md:pt-48 mt-12 pt-20 md:mt-18 poppins-light justify-center flex items-center flex-col pr-3">
             <div className="md:pb-10 md:flex-none flex flex-col md:justify-start justify-center items-center md:items-start pl-5 text-justify md:pl-0">
             <MainContent></MainContent>
             <Des></Des>
@@ -60,7 +60,7 @@ export default function Home(){
        {/* Main Content Part-2 END */}
 
        {/* Skills start  */}
-       <Skills skillList={["E-COMMERCE","ENTERTAINMENT"]}></Skills>
+       <Skills skillList={["E-COMMERCE","ENTERTAINMENT","CONTENT LIBRARY"]}></Skills>
        {/* Skills End */}
 
        {/* Projects */}
@@ -74,7 +74,7 @@ export default function Home(){
        <SingleCard type={"Medium"} fruit={fruitImage} price={"14"}>
        Includes(800 embeddings in dataset,unlimted retrival and storage)
        </SingleCard>
-       <SingleCard fruit={fruitImage} type={"Large"} price={"0.6"}>
+       <SingleCard fruit={fruitImage} type={"Large"} price={"0.2"}>
        Includes(unlimted embeddings in dataset,unlimted retrival and storage)
        <div className="mt-5">Note : The following plan is based Pay-as-you-Go type will be charged as per the consumption</div>
        </SingleCard>
