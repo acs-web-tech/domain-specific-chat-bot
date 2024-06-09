@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,68 +12,109 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
 }
+
 .poppins-light {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-.custom-bg-image{
+
+.custom-bg-image {
   border-radius: 2.73175rem;
   background: url("./static/hero-2.svg") lightgray -176.13px 0px / 206.897% 100% no-repeat;
   background-position: center;
 
 }
-.fruits{
+
+.fruits {
   background: url("./static//fruits.svg");
 }
-.temp{
-  width:28.125rem;
-  height:30.75519rem;
+
+.temp {
+  width: 28.125rem;
+  height: 30.75519rem;
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.border-style-custom{
+
+.border-style-custom {
   border: 5px solid transparent;
   /* animation: grad 2s infinite; */
   border-image: linear-gradient(90deg, rgb(246, 241, 231) 0%, rgb(242, 172, 132) 20%, rgb(63, 89, 228) 74%, rgb(64, 22, 160) 100%) 30;
   box-shadow: inset 0 0 100px rgba(84, 167, 255, 0.4), 0 0 30px rgba(0, 0, 0, 0.2);
   background: url("./static/noise-05.png");
 }
-.skill-bg{
+
+.skill-bg {
   box-shadow: inset 0 0 35px #54a7ff, 0 0 30px rgba(0, 0, 0, 0.2);
-  background: url("./static/noise-05.png"), linear-gradient(to left,#5207e8b0,#5208e6a4,#5207e8b0);
+  background: url("./static/noise-05.png"), linear-gradient(to left, #5207e8b0, #5208e6a4, #5207e8b0);
 }
-.custom-connect{
+
+.custom-connect {
   background: url("./static/BG_Mobile.svg") no-repeat;
   background-size: cover;
 }
-.header-bg{
+
+.header-bg {
   box-shadow: inset 0 0 35px #54a7ff, 0 0 30px rgba(0, 0, 0, 0.2);
   background: url("./static/noise-05.png");
 }
-.cover-head-bg{
+
+.cover-head-bg {
   background: url("./static/world-bg.png") no-repeat;
   background-position: center;
   background-size: cover;
+}
 
+.mette-glass {
+  width: 120px;
+  text-align: center;
+  padding: 5px;
+  background: linear-gradient(89.96deg, rgba(255, 255, 255, 0.05) 0.03%, rgba(255, 255, 255, 0.008) 49.67%, rgba(255, 255, 255, 0.05) 99.96%), url("./static/noise-05.png");
+  backdrop-filter: blur(4px);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.custom-gra-bg {
+  background: linear-gradient(264.28deg, #DEC7FF -38.2%, #5C27FE 103.12%), #FFFFFF;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.custom-bg-hero {
+  background: rgba(245, 243, 242, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.custom-bg-text-brand{
+  -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .55));
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: grad 5s ease-in infinite;
 }
 
 @keyframes grad {
-  10%{border-image: linear-gradient(90deg, rgb(246, 241, 231) 0%, rgb(242, 172, 132) 20%, rgb(63, 89, 228) 74%, rgb(64, 22, 160) 100%) 30;
-  }
-  50%{border-image: linear-gradient(180deg, rgb(246, 241, 231) 0%, rgb(242, 172, 132) 20%, rgb(63, 89, 228) 74%, rgb(64, 22, 160) 100%) 30;
-  }
-  70%{border-image: linear-gradient(280deg, rgb(246, 241, 231) 0%, rgb(242, 172, 132) 20%, rgb(63, 89, 228) 74%, rgb(64, 22, 160) 100%) 30;
-  }
-  100%{border-image: linear-gradient(360deg, rgb(246, 241, 231) 0%, rgb(242, 172, 132) 20%, rgb(63, 89, 228) 74%, rgb(64, 22, 160) 100%) 30;
+  10% {
+    background-image: linear-gradient(rgba(255, 255, 255, .55),rgba(255, 255, 255, .9));
+   }
+
+  100% {
+    background-image: linear-gradient(rgba(255, 255, 255, .9),rgba(255, 255, 255, .55));
+   
   }
 }
 
 @media (min-width:700px) {
-  body{
+  body {
     width: 1530px;
     overflow-x: hidden;
   }
+}
+@media (max-width:700px) {
+  .custom-bg-text-brand{animation: none;}
 }

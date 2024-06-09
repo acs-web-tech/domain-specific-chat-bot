@@ -3,7 +3,7 @@ import NavigationBar from "./navigation/Navigation"
 import MainContent from "./Main"
 import Des from "./Des"
 import AsideImage from "./AsideImage"
-import hero2 from "../static/hero-2.svg"
+import hero2 from "../static/about-01.png"
 import "../index.css"
 import MainContentSecond from "./MainContentSecond"
 import Skills from "./Skills"
@@ -21,7 +21,7 @@ export default function Home(){
         <>
         {/* Navigation Bar */}
         <div className="cover-head-bg h-[500px] md:h-[800px]">
-        <div className="flex justify-around md:px-36 bg-white poppins-bold p-3 sticky top-0 z-10">
+        <div className="custom-bg-hero flex justify-around md:px-36 poppins-bold p-3 sticky top-0 z-10">
         <NavigationBar List={[{navtext:"Home",navlink:"/",navStyle:""},
              {navtext:"About",navlink:"/",navStyle:""},
              {navtext:"Skills",navlink:"/",navStyle:""},
@@ -46,9 +46,9 @@ export default function Home(){
        {/*  Main Content Description End */}
 
        {/* Main Content Part-2 */}
-       <div className="md:flex mt-10 md:mt-0 flex justify-center items-center md:flex-row flex-col-reverse md:items-start md:gap-20 md:mt-56 pl-22 pb-5 md:pb-24">
+       <div className="md:flex mt-10 md:mt-0 flex justify-center items-center md:flex-row flex-col-reverse md:items-start md:gap-20 md:mt-56  pb-5 md:pb-24">
        
-        <div className="poppins-bold  mt-5 md:mt-0 md:ml-5 h-92 w-full md:w-auto md:h-auto px-5 md:px-0">
+        <div className="poppins-bold  mt-5 md:mt-0 md:ml-5 h-92 w-full md:w-auto md:h-auto px-2 md:px-0">
            <AsideImage image={hero2} style={{width:"34.125rem",height:"30.75519rem", rounded:"2.46338rem",backgroundImage:"custom-bg-image"}}></AsideImage>
         </div>
         <div className="w-full md:w-3/4 md:w-auto md:pt-10 md:flex flex flex-col md:justify-center justify-center items-center md:items-center">
@@ -60,7 +60,7 @@ export default function Home(){
        {/* Main Content Part-2 END */}
 
        {/* Skills start  */}
-       <Skills skillList={["HTML5","C","C++","Java","Javascript","PHP","CSS","GO"]}></Skills>
+       <Skills skillList={["E-COMMERCE","ENTERTAINMENT"]}></Skills>
        {/* Skills End */}
 
        {/* Projects */}
@@ -68,9 +68,16 @@ export default function Home(){
        <Projects></Projects>
        <ProjectCard></ProjectCard>
        <div className="flex flex-col md:flex-row md:justify-start justify-center items-center md:gap-10 md:pb-32 px-5 md:px-0">
-       <SingleCard fruit={fruitImage}></SingleCard>
-       <SingleCard fruit={fruitImage}></SingleCard>
-       <SingleCard fruit={fruitImage}></SingleCard>
+       <SingleCard type="Starter" fruit={fruitImage} price={"10"}>
+        Includes(500 embeddings in dataset,unlimted retrival and storage)
+       </SingleCard>
+       <SingleCard type={"Medium"} fruit={fruitImage} price={"14"}>
+       Includes(800 embeddings in dataset,unlimted retrival and storage)
+       </SingleCard>
+       <SingleCard fruit={fruitImage} type={"Large"} price={"0.6"}>
+       Includes(unlimted embeddings in dataset,unlimted retrival and storage)
+       <div className="mt-5">Note : The following plan is based Pay-as-you-Go type will be charged as per the consumption</div>
+       </SingleCard>
        </div>
        </div>
          {/* Projects End */}

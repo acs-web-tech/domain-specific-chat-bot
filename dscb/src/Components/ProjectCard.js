@@ -3,9 +3,9 @@ export default function ProjectCard(props){
    return(
     <div>
         <div className="switch hidden text-black text-[1.5rem] [font-family:'Poppins'] md:flex gap-5 mt-10">
-            <div className="w-12 pl-[5px] pr-2 py-2 bg-[#F3F3F3] rounded-[0.5rem] text-center font-[400]">ALL</div>
-            <div className="pl-[5px] pr-2 py-2 w-24 bg-[#FF006B]  rounded-lg text-white text-center">UI/UX</div>
-            <div className="w-42 bg-white pl-[10px] pr-5 py-2 rounded-lg text-center">App Design</div>
+            <div className="w-28 px-4 py-2 bg-[#F3F3F3] rounded-[0.5rem] flex justify-center font-[400]">STARTER</div>
+            <div className="py-2 px-4 w-28 bg-[#FF006B]  rounded-lg text-white flex justify-center">Medium</div>
+            <div className="w-42 px-4 bg-white  py-2 rounded-lg flex justify-center">Large</div>
         </div>
         
     </div>
@@ -15,9 +15,9 @@ export function SingleCard(props){
     return(
         <div className="border-style-custom [font-family:'Poppins'] w-full md:w-[28rem] mt-12 px-[20px] py-[10px] mt:px-[0px]  mt:py-[0px] shadow-md	 shadow-slate-100	">
           <div className="w-full h-[17.5rem] md:w-[25.4035rem] md:h-[17.5rem] fruits rounded-xl"></div>
-          <h4 className="md:text-[1.92188rem] md:font-[700] tracking-[0.05769rem] mt-5">Foodify</h4>
+          <h4 className="md:text-[1.92188rem] md:font-[700] tracking-[0.05769rem] mt-5">{props.type} ${props.price} </h4>
           <p className="w-full md:text-[0.879rem] md:font-[400] text-[#858585] tracking-[0.02669rem] md:mt-3">
-          Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis
+          {props.children}
           </p>
           <div className="md:flex md:gap-5 mt-3">
             <button className="border-2 border-[#FF006B] p-[0.5rem] rounded-lg text-[#FF006B] hover:text-white hover:bg-[#FF006B] transition-colors">Source Code</button>
